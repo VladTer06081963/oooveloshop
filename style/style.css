@@ -24,6 +24,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   color: var(--black-color);
+  background-color: white;
 }
 img {
   max-width: 100%;
@@ -181,18 +182,6 @@ a {
   object-fit: cover;
 }
 
-.product-card__body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-basis: 100%;
-  padding: 15px;
-}
-
-.product-card__body-top {
-  margin-bottom: 22px;
-}
-
 .product-card__price {
   font-size: 18px;
   color: var(--price-color);
@@ -242,66 +231,44 @@ a {
   width: initial;
 }
 
-.container {
+/* .container {
   max-width: 780px;
   margin: 0 auto;
   padding: 40px 15px;
-  /* border: 1px solid var(--stroke); */
-}
+} */
 
 /* index */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+.header {
+  background-color: var(--black-color);
+  /* max-height: 60px; */
+}
 
-/* MOBIL */
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-@media (max-width: 740px) {
-  /* Форма обратной связи */
+.header__logo {
+  display: block;
+  padding: 22px;
+  background-color: var(--base-color);
+  transition: opacity var(--transition-duration),
+    background-color var(--transition-duration);
+}
 
-  .callback-form {
-    flex-direction: column;
-  }
+.header__logo:focus-visible {
+  opacity: 0.8;
+}
 
-  .callback-form__inp {
-    flex-basis: initial;
-  }
-  body {
-    background-color: rgb(134, 148, 164);
-  }
-
-  /* Карточка товара */
-
-  .product-card__img {
-    height: 90px;
-  }
-
-  .product-card__body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-basis: 100%;
-    padding: 15px;
-  }
-
-  .product-card__body-top {
-    margin-bottom: 22px;
-  }
-
-  .product-card__price {
-    font-size: 14px;
-  }
-
-  .product-card__title {
-    font-size: 14px;
-  }
-
-  .product-card__btn {
-    width: 100%;
-  }
-
-  .product-card__img--big {
-    height: 100%;
-  }
-
-  .product-card__btn--big {
-    width: 100%;
-  }
+.header__logo:hover {
+  background-color: var(--base-color-hover);
+}
+.header__logo:active {
+  background-color: var(--base-color-active);
 }

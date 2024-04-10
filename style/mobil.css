@@ -1,0 +1,78 @@
+/* MOBIL */
+
+@media (max-width: 740px) {
+  /* Форма обратной связи */
+
+  .callback-form {
+    flex-direction: column;
+  }
+
+  .callback-form__inp {
+    flex-basis: initial;
+  }
+  body {
+    background-color: rgb(134, 148, 164);
+  }
+
+  /* Карточка товара */
+
+  .product-card__img {
+    height: 90px;
+  }
+
+  .product-card__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 100%;
+    padding: 15px;
+  }
+
+  .product-card__body-top {
+    margin-bottom: 22px;
+  }
+
+  .product-card__price {
+    font-size: 14px;
+  }
+
+  .product-card__title {
+    font-size: 14px;
+  }
+
+  .product-card__btn {
+    width: 100%;
+  }
+
+  .product-card__img--big {
+    height: 100%;
+  }
+
+  .product-card__btn--big {
+    width: 100%;
+  }
+
+  /* Шапка */
+  .header__container {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header__logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__menu {
+    padding: 20px 0;
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .header__menu-list {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: fit-content;
+  }
+}
